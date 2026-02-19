@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Messages</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- celebration overlay -->
+<div id="celebration"></div>
+
+<section class="stage">
+  <div class="chat-wrapper">
+    <div class="chat">
+
+      <div class="chat-top">
+        <div class="top-left">Messages</div>
+        <div class="top-mid">KoKo</div>
+        <div class="top-right">Details</div>
+      </div>
+
+      <div class="chat-body" id="chatBody">
+
+        <!-- Message 1: left grey GIF -->
+        <div class="bubble-row left">
+  <div class="bubble gray">
+    <img src="hug.gif" class="chat-gif" />
+  </div>
+</div>
+
+
+        <!-- Message 2: left grey question -->
+        <div class="bubble-row left fade-in">
+          <div class="bubble gray">sait m soe top wo ma larr, are we okayy now?</div>
+        </div>
+
+        <!-- typing indicator -->
+        <div class="bubble-row left hidden" id="typingRow">
+          <div class="bubble gray typing">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="tiny-hint" id="hintLine">Type <b>yes</b> and press Send.</div>
+      </div>
+
+      <div class="chat-input">
+        <div class="camera">📷</div>
+        <input id="msgInput" class="input-box" placeholder="iMessage" autocomplete="off" />
+        <button id="sendBtn" class="send-btn">Send</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

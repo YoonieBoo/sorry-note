@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorry Note</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="stage">
+
+  <!-- NOTIFICATION LANDING -->
+  <div id="notifyStage" class="notify-stage">
+    <div id="notifyCard" class="notify-card">
+      <div class="notify-top">
+        <div class="notify-left">
+          <div class="notify-icon"></div>
+          <div class="notify-title">MESSAGES</div>
+        </div>
+        <div class="notify-time">now</div>
+      </div>
+
+      <div class="notify-body">
+        <div class="notify-from">Yoon</div>
+        <div class="notify-text">Hello KoKo...?</div>
+      </div>
+
+      <div class="notify-hint">Tap to open</div>
+    </div>
+  </div>
+
+  <!-- CHAT (his POV) -->
+  <div id="letterStage" class="letter-stage hidden">
+    <div class="chat-wrapper">
+      <div class="chat">
+
+        <div class="chat-top">
+          <div class="top-left">Messages</div>
+          <div class="top-mid">KoKo</div>
+          <div class="top-right">Details</div>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+
+          <!-- TIMED MESSAGE CONTAINER -->
+          <div id="initialMessages" class="hidden">
+
+            <div class="bubble-row left">
+              <div class="bubble gray">Hello KoKo…</div>
+            </div>
+
+            <div class="bubble-row left">
+              <div class="bubble gray">
+                i know you’re upset with me right now and i completely understand why
+              </div>
+            </div>
+
+            <div class="bubble-row left">
+              <div class="bubble gray">
+                and i know it’s not easy when i’m this busy.
+              </div>
+            </div>
+
+            <div class="bubble-row left">
+              <div class="bubble gray">
+                baby amyar g chit dar koko lal thi par dal,
+                baby lal i'm always trying my best for u
+              </div>
+            </div>
+
+            <div class="bubble-row left">
+              <div class="bubble gray">
+                i'm really sorry i haven't had the time you deserve lately
+              </div>
+            </div>
+
+            <div class="bubble-row left">
+              <div class="bubble gray">
+                i promise i will be better, will u please forgive me?
+              </div>
+            </div>
+
+            <div class="bubble-row left">
+  <div class="bubble gray">
+    <img src="sorry.gif" class="sorry-gif" />
+  </div>
+</div>
+
+          </div>
+
+          
+
+          <!-- typing indicator -->
+          <div class="bubble-row left hidden" id="typingRow">
+            <div class="bubble gray typing">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="tiny-hint" id="hintLine">
+            Type <b>yes</b> and press Send.
+          </div>
+
+        </div>
+
+        <div class="chat-input">
+          <div class="camera">📷</div>
+          <input id="msgInput" class="input-box" placeholder="iMessage" autocomplete="off" />
+          <button id="sendBtn" class="send-btn">Send</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
