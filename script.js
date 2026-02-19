@@ -75,9 +75,9 @@ function addBubble(chatBody, side, color, text, extraClass = "") {
 
     if (val.toLowerCase() !== "yes") {
       input.value = "";
-      hintLine.innerHTML = 'Type <b>yes</b> only 🙂';
+      hintLine.innerHTML = 'Type <b>yes</b> only pleaseeeeee 😭';
       setTimeout(() => {
-        hintLine.innerHTML = 'Type <b>yes</b> and press Send.';
+        hintLine.innerHTML = 'Type <b>yes</b> and press Send pleaseeeeeee.';
       }, 1200);
       return;
     }
